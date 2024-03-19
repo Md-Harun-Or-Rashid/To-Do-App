@@ -1,0 +1,42 @@
+body{
+
+    background-color: #40a89a;
+    color: #fafbfcfa;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #0a0a0a;
+    padding: 8px;
+    text-align: left;
+    background-color: #f4f8fafa;
+    border-color: rgb(3, 3, 3);
+    color: #000;
+}
+
+th {
+    background-color: #e6dae2;
+}
+
+input, select, button {
+    margin: 6px;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.DateInformation{
+    display: flex;
+    justify-content: space-between;
+}
+.input-field:invalid {
+    border: 2px solid red;
+  }
+  

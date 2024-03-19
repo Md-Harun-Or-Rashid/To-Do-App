@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project One</title>
+</head>
+
+<body>
+<div class="DateInformation">
+ <p id="date"></p> 
+ <p id="time"></p>
+</div>
+
+<h1> To-Do App</h1>
+<div class="DateInformation">
+<p id="taskCounter"></p>
+<p id="taskDeleted"></p>
+<p id ='completedTask'></p>
+</div>
+
+<div class="TaskPlanner">
+    <table id="TaskTable">
+        <thead>
+            <tr>
+                <th> List of the Task </th>
+                <th> Deadline</th>
+                <th> Priority Level</th>
+                <th> ☑ Done </th>
+                <th> Delete Task!</th>
+            </tr>
+        </thead>
+        <tbody id="TaskDetails"></tbody>
+    </table>
+    <div>
+       <input type="text" id="AddTask" class="input-field" minlength="15" placeholder="Add a task please" required>
+       <input type="date" id="AddDate" class="input-field" placeholder="Choose a date" required >
+       <select  id="PriorityLevel" title=" Choose One"> 
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+        <option value="Not Sure">Not Sure</option>
+       </select>
+     <button onclick="saveTask()"> Save </button>
+     <button onclick="clearFields()">Clear</button>
+
+    </div>
+
+</div>
+
+
+
+
+
+    <!--We can place Javascript external file in head section , but it is part of the best practices to place javascript file at the end of body section before closing body tag. It is to avoid blocking page. -->
+    <script src="main.js"></script>
+</body>
+
+</html>
